@@ -27,7 +27,12 @@ Some article that you might want users to look at
 \code{\link[neatpkg]{pkg_new}} for the function that created this package
 }
 \author{
-\strong{Maintainer}: Joe Bloggs \email{joe@bloggs.com}
+\strong{Maintainer}: Matt Denwood \email{md@sund.ku.dk}
+
+Authors:
+\itemize{
+  \item Sandie Arnoux \email{sandie.arnoux@inrae.fr}
+}
 
 }
 \keyword{internal}

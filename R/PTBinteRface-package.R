@@ -22,6 +22,9 @@
 #' @keywords internal
 "_PACKAGE"
 
+#' @importFrom Rcpp loadModule
+#' @useDynLib PTBinteRface, .registration = TRUE
+
 ## usethis namespace: start
 ## usethis namespace: end
 NULL

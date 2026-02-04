@@ -1,28 +1,34 @@
 Package: PTBinteRface
-Title: What the Package Does (One Line, Title Case)
+Title: Interface to the paratuberculosis model contained in the PTBinraeR package
 Version: 0.1.0-1
 Date: 2026-02-04
 Description: What the package does (one paragraph).
 Authors@R:
-  c(
-    person(given="Joe", family="Bloggs", email="joe@bloggs.com", role=c("aut", "cre"))
-  )    
+    c(person(given = "Matt", family = "Denwood",
+        email = "md@sund.ku.dk", role = c("aut","cre")), 
+      person(given = "Sandie", family = "Arnoux",
+        email = "sandie.arnoux@inrae.fr", role = c("aut"))
+    )
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
+Additional_repositories: https://ku-awdc.github.io/drat/
 Depends:
   R (>= 4.1.0)
+LinkingTo:
+  Rcpp,
+  PTBinraeR
 Imports:
+  Rcpp,
   rlang,
   dplyr,
   tibble
 Suggests: 
-  neatpkg,
   knitr,
-  rmarkdown,
   spelling,
   testthat (>= 3.0.0)
 Config/testthat/edition: 3
 VignetteBuilder: knitr
 Language: en-GB
+SystemRequirements: C++20

@@ -2,6 +2,8 @@
 
 S3method(print,ExampleClass)
 export(example_function)
+importFrom(Rcpp,loadModule)
 importFrom(dplyr,mutate)
 importFrom(rlang,.data)
 importFrom(tibble,tibble)
+useDynLib(PTBinteRface, .registration = TRUE)
