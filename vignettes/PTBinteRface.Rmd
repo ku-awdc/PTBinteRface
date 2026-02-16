@@ -23,7 +23,7 @@ install.packages("PTBinteRface", repos = c('https://ku-awdc.r-universe.dev', 'ht
 Alternatively, it can be built from source via our drat repository:
 
 ```{r eval=FALSE}
-install.packages("PTBinteRface", repos=c(CRAN="https://cran.rstudio.com/", "ku-awdc"="https://ku-awdc.github.io/drat/"))
+install.packages("PTBinteRface", repos = c('https://ku-awdc.github.io/drat/', 'https://cloud.r-project.org'))
 ```
 
 After installation, the model can be run using:
