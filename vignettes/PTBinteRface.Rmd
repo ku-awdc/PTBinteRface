@@ -14,6 +14,30 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
-library("PTBinteRface")
+This is a wrapper package for INRAE's PTB model - this can be installed as pre-built binaries from our r-universe repo:
+
+```{r eval=FALSE}
+install.packages("PTBinteRface", repos = c('https://ku-awdc.r-universe.dev', 'https://cloud.r-project.org'))
 ```
+
+Alternatively, it can be built from source via our drat repository:
+
+```{r eval=FALSE}
+install.packages("PTBinteRface", repos=c(CRAN="https://cran.rstudio.com/", "ku-awdc"="https://ku-awdc.github.io/drat/"))
+```
+
+After installation, the model can be run using:
+
+```{r}
+library("PTBinteRface")
+results <- run_ptb_model()
+```
+
+Information on the parameters is given in the help file for ?run_ptb_model, and examples of the data frame inputs are given in the underlying PTBinraeR package.
+
+The output from the model is a named list of data frames corresponding to the files output by the model:
+
+```{r}
+results
+```
+

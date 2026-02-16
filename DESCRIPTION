@@ -1,8 +1,8 @@
 Package: PTBinteRface
 Title: Interface to the paratuberculosis model contained in the PTBinraeR package
-Version: 0.1.0-1
-Date: 2026-02-04
-Description: What the package does (one paragraph).
+Version: 0.2.0-1
+Date: 2026-02-16
+Description: This is a wrapper package for INRAE's PTB model.  The model can be run using the run_ptb_model function.  See the vignette for more information.
 Authors@R:
     c(person(given = "Matt", family = "Denwood",
         email = "md@sund.ku.dk", role = c("aut","cre")), 
@@ -18,12 +18,13 @@ Depends:
   R (>= 4.1.0)
 LinkingTo:
   Rcpp,
-  PTBinraeR
+  PTBinraeR (>= 0.2.0)
 Imports:
+  methods,
+  PTBinraeR,
   Rcpp,
-  rlang,
-  dplyr,
-  tibble
+  readr,
+  rlang
 Suggests: 
   knitr,
   spelling,

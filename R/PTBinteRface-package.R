@@ -1,23 +1,9 @@
 #' @name PTBinteRface-package
 #' @aliases PTBinteRface
-#' @title What the Package Does (One Line, Title Case)
+#' @title Interface to the paratuberculosis model contained in the PTBinraeR package
 #'
 #' @details
-#' Some description of the package
-#'
-#' @examples
-#' ## An example function:
-#' df <- example_function()
-#' df
-#'
-#' ## To cite this package in publications use:
-#' citation("PTBinteRface")
-#'
-#' @seealso
-#' \code{\link[neatpkg]{pkg_new}} for the function that created this package
-#'
-#' @references
-#' Some article that you might want users to look at
+#' This is a wrapper package for INRAE's PTB model.  The model can be run using the run_ptb_model function.  See the vignette for more information.
 #'
 #' @keywords internal
 "_PACKAGE"
