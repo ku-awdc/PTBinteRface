@@ -12,6 +12,8 @@
 // Linking to PTBinraeR package (header guards will filter it out if above is used instead):
 #include <para_tb_model.h>
 
+#include <chrono>
+
 #include <Rcpp.h>
 
 template <auto s_cts>
