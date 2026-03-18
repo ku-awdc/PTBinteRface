@@ -18,7 +18,7 @@ Depends:
   R (>= 4.1.0)
 LinkingTo:
   Rcpp,
-  PTBinraeR (>= 0.2.0)
+  PTBinraeR (>= 0.2.1)
 Imports:
   methods,
   PTBinraeR,
